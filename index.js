@@ -11,6 +11,12 @@ var SendIntentAndroid = {
     printBarcodeText(barcode, text) {
         return RNSendIntentAndroid.printBarcodeText(barcode, text);
     },
+    printBarcodeText2(barcode, text) {
+        return RNSendIntentAndroid.printBarcodeText2(barcode, text);
+    },
+    printBarcodeText3(barcode, text) {
+        return RNSendIntentAndroid.printBarcodeText3(barcode, text);
+    },
 };
 
 module.exports = SendIntentAndroid;
