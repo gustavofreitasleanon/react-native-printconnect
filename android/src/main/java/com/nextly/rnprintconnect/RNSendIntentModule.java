@@ -428,10 +428,10 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
                 "^MMT\n" +
                 "^PW719\n" +
                 "^LL240\n" +
-                "^LS0\n" +;
-                "^BY5,3,135^FT144,156^BCN,,Y,N\n" +;
-                "^FH\\^FD>;123456789012^FS\n" +;
-                "^FT38,49^A0N,28,28^FH\\^CI28^FDTexto^FS^CI27\n" +;
+                "^LS0\n" +
+                "^BY5,3,135^FT144,156^BCN,,Y,N\n" +
+                "^FH\\^FD>;123456789012^FS\n" +
+                "^FT38,49^A0N,28,28^FH\\^CI28^FDTexto^FS^CI27\n" +
                 "^XZ\n";
 
         byte[] templateBytes = null;
