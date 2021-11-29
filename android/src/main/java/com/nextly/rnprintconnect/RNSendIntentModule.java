@@ -330,14 +330,26 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
     public void printBarcodeText(String barcode, String text, final Promise promise) {
         String templateData = // correct
                 "^XA\n" +
+                "~TA000\n" +
+                "~JSN\n" +
+                "^LT0\n" +
+                "^MNW\n" +
+                "^MTT\n" +
+                "^PON\n" +
+                "^PMN\n" +
+                "^JMA\n" +
+                "^LH0,0\n" +
+                "^PR6,6\n" +
+                "~SD15\n" + 
+                "^JUS\n" + 
+                "^LRN\n" + 
+                "^PA0,1,1,0\n" + 
                 "^MMT\n" +
-                "^PW719\n" +
                 "^LL240\n" +
                 "^LS0\n" +
-                "^BY3,3,59^FT162,67^BCN,,Y,N\n" +
+                "^BY5,3,118^FT188,181^BCN,,Y,N\n" +
                 "^FH\\^FD>;%BARCODE%^FS\n" +
-                "^FT32,46^A0N,28,28^FH\\^CI28^FD%TEXT%^FS^CI27" +
-                "^PQ1,0,1,Y\n" +
+                "^FT47,63^A0N,38,38^FH\\^CI28^FD%TEXT%^FS^CI27\n" +
                 "^XZ\n";
 
         byte[] templateBytes = null;
@@ -364,25 +376,28 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void printBarcodeText2(String barcode, String text, final Promise promise) {
         String templateData = // correct
+                "CT~~CD,~CC^~CT~\n" +
                 "^XA\n" +
                 "~TA000\n" +
+                "~JSN\n" +
                 "^LT0\n" +
                 "^MNW\n" +
                 "^MTT\n" +
                 "^PON\n" +
                 "^PMN\n" +
+                "^JMA\n" +
                 "^LH0,0\n" +
-                "^PR8,8\n" +
+                "^PR6,6\n" +
                 "~SD15\n" + 
                 "^JUS\n" + 
                 "^LRN\n" + 
                 "^PA0,1,1,0\n" + 
-                "^PW719\n" +
+                "^MMT\n" +
                 "^LL240\n" +
                 "^LS0\n" +
-                "^BY5,3,105^FT150,130^BCN,,Y,N\n" +
-                "^FH\\^FD>;%TEXT%^FS\n" +
-                "^FT39,53^A0N,28,28^FH\\^CI28^%BARCODE%^FS^CI27\n" +
+                "^BY5,3,118^FT188,181^BCN,,Y,N\n" +
+                "^FH\\^FD>;%BARCODE%^FS\n" +
+                "^FT47,63^A0N,38,38^FH\\^CI28^FD%TEXT%^FS^CI27\n" +
                 "^XZ\n";
 
         byte[] templateBytes = null;
@@ -409,6 +424,7 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void printBarcodeText3(String barcode, String text, final Promise promise) {
         String templateData = // correct
+                "CT~~CD,~CC^~CT~\n" +
                 "^XA\n" +
                 "~TA000\n" +
                 "~JSN\n" +
@@ -419,19 +435,17 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
                 "^PMN\n" +
                 "^LH0,0\n" +
                 "^JMA\n" + 
-                "^PR8,8\n" + 
+                "^PR6,6\n" + 
                 "~SD15\n" + 
                 "^JUS\n" + 
                 "^LRN\n" +
                 "^CI27\n" +
                 "^PA0,1,1,0\n" +
                 "^MMT\n" +
-                "^PW719\n" +
-                "^LL240\n" +
                 "^LS0\n" +
-                "^BY5,3,135^FT144,156^BCN,,Y,N\n" +
-                "^FH\\^FD>;123456789012^FS\n" +
-                "^FT38,49^A0N,28,28^FH\\^CI28^FDTexto^FS^CI27\n" +
+                "^BY5,3,162^FT197,195^BCN,,Y,N\n" +
+                "^FH\\^FD>;%BARCODE^FS\n" +
+                "^FT40,75^A0N,42,43^FH\\^CI28^FD%TEXT%^FS^CI27\n" +
                 "^XZ\n";
 
         byte[] templateBytes = null;
